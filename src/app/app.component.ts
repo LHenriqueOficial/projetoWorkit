@@ -62,6 +62,11 @@ export class AppComponent implements OnInit {
       title:'Professional Register',
       url:'screen-professional-register',
       icon:'people'
+    },
+    {
+      title:'Update Profile',
+      url:'screen-update-profile',
+      icon:'people-circle'
     }
   ];
   public labels = ['Family', 'Friends', 'Notes', 'Work', 'Travel', 'Reminders'];

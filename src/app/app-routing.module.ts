@@ -26,6 +26,14 @@ const routes: Routes = [
   {
     path: 'screen-professional-register',
     loadChildren: () => import('./screen-professional-register/screen-professional-register.module').then( m => m.ScreenProfessionalRegisterPageModule)
+  },
+  {
+    path: 'screen-bank-account-register',
+    loadChildren: () => import('./screen-bank-account-register/screen-bank-account-register.module').then( m => m.ScreenBankAccountRegisterPageModule)
+  },
+  {
+    path: 'screen-update-profile',
+    loadChildren: () => import('./screen-update-profile/screen-update-profile.module').then( m => m.ScreenUpdateProfilePageModule)
   }
 ];
 
