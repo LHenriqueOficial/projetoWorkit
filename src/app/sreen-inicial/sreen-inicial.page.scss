@@ -1,0 +1,21 @@
+ion-title {
+    text-align: center;
+    font-size: 40px;
+    color: rgb(243, 210, 20);
+    background-color: rgb(20, 20, 19);
+    font-family: aHarlow Solid Italic;
+}
+
+.n1 {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+ion-text {
+    font-size: 50px;
+    font-family: aHarlow Solid Italic;
+}

@@ -1,0 +1,93 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-buttons>
+            <ion-menu-button></ion-menu-button>
+            <ion-back-button></ion-back-button>
+        </ion-buttons>
+        <ion-title>Professional Register</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content color="dark" fullscreen>
+
+    <div class="n2">
+        <ion-text class="n1" color="warning">WorkIt</ion-text>
+
+    </div>
+    <ion-item color="dark">
+        <ion-label color="warning">Type:</ion-label>
+    </ion-item>
+
+    <ion-item color="dark">
+        <ion-select interface="popover" value='Interpriser'>
+            <ion-select-option value="interpriser">Interpriser</ion-select-option>
+            <ion-select-option value="worker">worker</ion-select-option>
+        </ion-select>
+    </ion-item>
+
+    <ion-item color="dark">
+        <ion-label color="warning">Occupation Area:</ion-label>
+    </ion-item>
+
+    <ion-item color="dark">
+        <ion-select interface="popover" value='engenharia'>
+            <ion-select-option value='engenharia'>Engenharia</ion-select-option>
+            <ion-select-option value='hotelaria'>Hotelaria</ion-select-option>
+            <ion-select-option value='saude'>Saude</ion-select-option>
+            <ion-select-option value='alimentacao'>Alimentação</ion-select-option>
+            <ion-select-option value='sporte'>Sporte</ion-select-option>
+            <ion-select-option value='tecnologia'>Tecnologia</ion-select-option>
+            <ion-select-option value='transporte'>Transporte</ion-select-option>
+            <ion-select-option value='educacao'>Educação</ion-select-option>
+        </ion-select>
+    </ion-item>
+
+
+    <ion-item color="dark">
+        <ion-checkbox color="warning"></ion-checkbox>
+        <ion-label color="warning">Other</ion-label>
+    </ion-item>
+    <ion-item color='dark'>
+        <ion-label color="warning" position='floating'>Add Occupation Area:</ion-label>
+        <ion-input type='text'></ion-input>
+        <ion-button slot="end" color="warning">Save</ion-button>
+    </ion-item>
+
+    <ion-item color="dark">
+        <ion-label color="warning">Occupation:</ion-label>
+    </ion-item>
+    <ion-item color="dark">
+        <ion-select interface="popover" value='Garson'>
+            <ion-select-option>
+                <ion-select-option value='engenharia'>Engenheiro civil</ion-select-option>
+                <ion-select-option value='hotelaria'>Garson</ion-select-option>
+                <ion-select-option value='saude'>Engenheiro Mecanico</ion-select-option>
+                <ion-select-option value='alimentacao'>Cozinheiro</ion-select-option>
+                <ion-select-option value='sporte'>Professor de Ingles</ion-select-option>
+                <ion-select-option value='tecnologia'>Motorista</ion-select-option>
+                <ion-select-option value='transporte'>Desenvolvedor Java </ion-select-option>
+                <ion-select-option value='educacao'>Desenvolvedor Mobile</ion-select-option>
+            </ion-select-option>
+        </ion-select>
+    </ion-item>
+    <ion-item color="dark">
+        <ion-checkbox color="warning"></ion-checkbox>
+        <ion-label>Other</ion-label>
+    </ion-item>
+    <ion-item color="dark">
+        <ion-label position='floating' color="warning">Occupation</ion-label>
+        <ion-input type='text'></ion-input>
+        <ion-button slot='end' color="warning">Save</ion-button>
+    </ion-item>
+    <ion-item color="dark">
+        <ion-label color="warning">Describle your Skills</ion-label>
+    </ion-item>
+    <ion-item color="dark">
+        <ion-label position="floating">Description</ion-label>
+        <ion-textarea></ion-textarea>
+    </ion-item>
+    <ion-button expand='block' color="warning">Seve Return </ion-button>
+
+
+
+</ion-content>

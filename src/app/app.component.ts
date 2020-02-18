@@ -41,6 +41,27 @@ export class AppComponent implements OnInit {
       title: 'Spam',
       url: '/folder/Spam',
       icon: 'warning'
+    },
+    {
+      title:'Login',
+      url:'screen-login',
+      icon:'home'
+    },
+    {
+      title:'Inicial',
+      url:'sreen-inicial',
+      icon:'locate'
+      
+    },
+    {
+      title:'Register',
+      url:'scree-resgister',
+      icon:'person'
+    },
+    {
+      title:'Professional Register',
+      url:'screen-professional-register',
+      icon:'people'
     }
   ];
   public labels = ['Family', 'Friends', 'Notes', 'Work', 'Travel', 'Reminders'];
