@@ -1,9 +1,71 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title>screenAddressRegister</ion-title>
-  </ion-toolbar>
+    <ion-toolbar>
+        <ion-buttons>
+            <ion-menu-button></ion-menu-button>
+            <ion-back-button slot="end"></ion-back-button>
+        </ion-buttons>
+        <ion-title>Address Register</ion-title>
+    </ion-toolbar>
 </ion-header>
 
-<ion-content>
+<ion-content color="dark">
+
+    <div class="n1">
+        <ion-text color="warning">WorkIt</ion-text>
+    </div>
+
+    <ion-item color="dark">
+        <ion-label color="warning" position="floating">Zip Cod:</ion-label>
+        <ion-input type="text"></ion-input>
+    </ion-item>
+
+    <ion-item color="dark">
+        <ion-label color="warning" position="floating">Address:</ion-label>
+        <ion-input type="text"></ion-input>
+    </ion-item>
+
+    <ion-item color="dark">
+        <ion-label color="warning" position="floating">District:</ion-label>
+        <ion-input type="text"></ion-input>
+    </ion-item>
+
+    <ion-item color="dark">
+        <ion-label color="warning" position="floating">Number:</ion-label>
+        <ion-input type="Number"></ion-input>
+    </ion-item>
+
+    <ion-item color="dark">
+        <ion-label color="warning">State:</ion-label>
+    </ion-item>
+
+    <ion-item color="dark">
+        <ion-select interface="popover" value="SP">
+            <ion-select-option value="ac">AC</ion-select-option>
+            <ion-select-option value="al">AL</ion-select-option>
+            <ion-select-option value="am">AM</ion-select-option>
+            <ion-select-option value="pr">PR</ion-select-option>
+            <ion-select-option value="rj">RJ</ion-select-option>
+            <ion-select-option value="sp">SP</ion-select-option>
+            <ion-select-option value="sc">SC</ion-select-option>
+            <ion-select-option value="to">TO</ion-select-option>
+        </ion-select>
+    </ion-item>
+
+
+    <ion-item color="dark">
+        <ion-label color="warning">City:</ion-label>
+    </ion-item>
+    <ion-item color="dark">
+        <ion-select interface="popover" value="">
+            <ion-select-option value="assis">Assis</ion-select-option>
+            <ion-select-option value="londrina">Londrina</ion-select-option>
+            <ion-select-option value="taruma">Tarumã</ion-select-option>
+            <ion-select-option value="botucatu">Botucatu</ion-select-option>
+            <ion-select-option value="jau">Jaú</ion-select-option>
+        </ion-select>
+    </ion-item>
+
+    <ion-button fill='outline' expand='block' color="warning" (click)="showScreen('screen-update-profile')">Seve Return </ion-button>
+
 
 </ion-content>
