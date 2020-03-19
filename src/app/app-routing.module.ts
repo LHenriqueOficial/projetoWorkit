@@ -34,6 +34,10 @@ const routes: Routes = [
   {
     path: 'screen-update-profile',
     loadChildren: () => import('./screen-update-profile/screen-update-profile.module').then( m => m.ScreenUpdateProfilePageModule)
+  },
+  {
+    path: 'screen-address-register',
+    loadChildren: () => import('./screen-address-register/screen-address-register.module').then( m => m.ScreenAddressRegisterPageModule)
   }
 ];
 
