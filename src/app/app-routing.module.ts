@@ -4,7 +4,7 @@ import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 const routes: Routes = [
   {
     path: '',
-    redirectTo: 'folder/Inbox',
+    redirectTo: 'sreen-inicial',
     pathMatch: 'full'
   },
   {
@@ -38,6 +38,10 @@ const routes: Routes = [
   {
     path: 'screen-address-register',
     loadChildren: () => import('./screen-address-register/screen-address-register.module').then( m => m.ScreenAddressRegisterPageModule)
+  },
+  {
+    path: 'screen-person-register',
+    loadChildren: () => import('./screen-person-register/screen-person-register.module').then( m => m.ScreenPersonRegisterPageModule)
   }
 ];
 

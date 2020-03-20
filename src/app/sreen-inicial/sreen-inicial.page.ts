@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { NavController } from '@ionic/angular';
 
 @Component({
   selector: 'app-sreen-inicial',
@@ -7,9 +8,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SreenInicialPage implements OnInit {
 
-  constructor() { }
+  constructor( private nCtrl: NavController) { }
 
   ngOnInit() {
   }
-
+  showScreen(nomeDaPagina: string){
+    this.nCtrl.navigateForward(nomeDaPagina);
+  }
 }

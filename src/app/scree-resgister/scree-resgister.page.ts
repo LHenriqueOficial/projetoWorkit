@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { Usuarios } from 'src/Models/Usuarios';
+import {AngularFireAuth} from 'angularfire2/auth'
+
 
 @Component({
   selector: 'app-scree-resgister',
@@ -7,9 +10,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ScreeResgisterPage implements OnInit {
 
-  constructor() { }
-
+  usuario:Usuarios
+  constructor( public fbauth: AngularFireAuth) {
+    this.usuario=new Usuarios()
+   }
+  
   ngOnInit() {
   }
-
+cadastrarUsuario(){
+  this.fbauth.auth.createUserWithEmailAndPassword( this.usuario.email, this.usuario.senha)
+}
 }

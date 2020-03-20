@@ -1,0 +1,55 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-buttons>
+            <ion-menu-button></ion-menu-button>
+            <ion-back-button></ion-back-button>
+        </ion-buttons>
+
+        <ion-title>Person Register</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content color="dark">
+    <div class="n1">
+        <ion-text color="warning">WorkIt</ion-text>
+    </div>
+
+    <ion-item color="dark">
+        <ion-label color="warning" position="floating">Fist Name*</ion-label>
+        <ion-input type="text"></ion-input>
+    </ion-item>
+
+    <ion-item color="dark">
+        <ion-label color="warning" position="floating">Last Name*</ion-label>
+        <ion-input type="text"></ion-input>
+    </ion-item>
+
+    <ion-item color="dark">
+        <ion-label color="warning" position="floating">Cpf*</ion-label>
+        <ion-input type="text"></ion-input>
+    </ion-item>
+
+    <ion-item color="dark">
+        <ion-label color="warning">Genre:</ion-label>
+        <ion-checkbox color="warning"></ion-checkbox>
+        <ion-text color="warning">woman:</ion-text>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+        <ion-checkbox color="warning"></ion-checkbox>
+        <ion-text color="warning">Men:</ion-text>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+        <ion-checkbox color="warning"></ion-checkbox>
+        <ion-text color="warning">Other:</ion-text>
+    </ion-item>
+
+    <ion-item color="dark">
+        <ion-label color="warning" position="floating">Year:</ion-label>
+        <ion-input type="number"></ion-input>
+    </ion-item>
+
+    <ion-item color="dark">
+        <ion-label color="warning" position="floating">Phone Number*</ion-label>
+        <ion-input type="number"></ion-input>
+    </ion-item>
+
+    <ion-button fill="outline" expand="block" color="warning" (click)="showScreen('screen-update-profile')">Save Return</ion-button>
+</ion-content>
