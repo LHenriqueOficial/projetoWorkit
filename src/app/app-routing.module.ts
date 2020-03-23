@@ -46,6 +46,10 @@ const routes: Routes = [
   {
     path: 'screen-home',
     loadChildren: () => import('./screen-home/screen-home.module').then( m => m.ScreenHomePageModule)
+  },
+  {
+    path: 'screen-usuarios',
+    loadChildren: () => import('./screen-usuarios/screen-usuarios.module').then( m => m.ScreenUsuariosPageModule)
   }
 ];
 

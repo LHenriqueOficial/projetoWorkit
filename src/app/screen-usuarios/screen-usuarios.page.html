@@ -1,0 +1,24 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-buttons>
+            <ion-menu-button></ion-menu-button>
+            <ion-back-button></ion-back-button>
+        </ion-buttons>
+        <ion-title>Usuarios</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content color="dark">
+    <div class="n1">
+        <ion-text color="warning">
+            WorkIt
+        </ion-text>
+    </div>
+    <br>
+    <ion-list color="dark">
+        <ion-item *ngFor="let usuario of listaUsuarios" color="dark">
+            <ion-text color="warning">{{usuario.nome}}</ion-text>
+        </ion-item>
+    </ion-list>
+
+</ion-content>

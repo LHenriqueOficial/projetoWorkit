@@ -44,6 +44,7 @@ export class ScreenLoginPage implements OnInit {
       const alert = await this.AlertCtrl.create({
         header:'Menssagem',
         subHeader:"",
+        message:'Login ou Senha está incorreto',
         buttons:['Ok']
       });
       await alert.present();
