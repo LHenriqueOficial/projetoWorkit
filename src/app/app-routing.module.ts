@@ -42,6 +42,10 @@ const routes: Routes = [
   {
     path: 'screen-person-register',
     loadChildren: () => import('./screen-person-register/screen-person-register.module').then( m => m.ScreenPersonRegisterPageModule)
+  },
+  {
+    path: 'screen-home',
+    loadChildren: () => import('./screen-home/screen-home.module').then( m => m.ScreenHomePageModule)
   }
 ];
 

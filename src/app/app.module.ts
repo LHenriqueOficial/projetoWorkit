@@ -8,8 +8,10 @@ import { StatusBar } from '@ionic-native/status-bar/ngx';
 
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
-import { AngularFireModule} from 'angularfire2';
+import { AngularFireModule} from 'angularfire2/';
 import { AngularFireAuthModule } from 'angularfire2/auth';
+import { AngularFirestoreModule } from 'angularfire2/firestore';
+
 
 
 
@@ -29,7 +31,7 @@ var firebaseConfig = {
   entryComponents: [],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(), AppRoutingModule,AngularFireAuthModule
+    IonicModule.forRoot(), AppRoutingModule,AngularFirestoreModule, AngularFireAuthModule
     , AngularFireModule.initializeApp(firebaseConfig)
   ],
   providers: [

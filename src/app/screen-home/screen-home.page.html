@@ -1,0 +1,27 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-buttons>
+            <ion-menu-button></ion-menu-button>
+            <ion-back-button></ion-back-button>
+        </ion-buttons>
+
+        <ion-title>Home</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content color='dark'>
+    <div class="n1">
+        <ion-text color="warning">
+            WorkIt
+        </ion-text>
+    </div>
+    <br><br>
+    <ion-button expand='block' fill="outline" color="warning" (click)="showScreen('screen-update-profile')">
+        <ion-icon slot="start" name="people-outline"></ion-icon> Edit Profile</ion-button>
+
+
+    <br>
+    <ion-button expand="block" fill="outline" color="warning" (click)="logOut()">LogOut</ion-button>
+
+
+</ion-content>

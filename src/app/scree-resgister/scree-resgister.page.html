@@ -16,21 +16,21 @@
         <form (ngSubmit)="cadastrarUsuario()">
             <ion-item color="dark ">
                 <ion-label position="floating " color="warning">Name*
-                    <ion-text color="danger ">*</ion-text>
+
                 </ion-label>
                 <ion-input type="text" [(ngModel)]="usuario.nome" name="txtnome"></ion-input>
             </ion-item>
 
             <ion-item color="dark ">
-                <ion-label position="floating " color="warning">e-mail:
-                    <ion-text color="danger ">*</ion-text>
+                <ion-label position="floating " color="warning">e-mail*:
+
                 </ion-label>
                 <ion-input required type="e-mail" [(ngModel)]="usuario.email" name="txtemail"></ion-input>
             </ion-item>
 
             <ion-item color="dark ">
                 <ion-label position="floating " color="warning">Password*
-                    <ion-text color="danger ">*</ion-text>
+
                 </ion-label>
                 <ion-input type="password" [(ngModel)]="usuario.senha" name="txtsenha"></ion-input>
             </ion-item>

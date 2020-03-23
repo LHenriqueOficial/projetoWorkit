@@ -16,22 +16,31 @@
 
         <ion-text class="n1" color="warning">WorkIt</ion-text>
 
+        <form (ngSubmit)="loginUsuario()">
 
-        <ion-item color="dark ">
-            <ion-label position="floating " color="warning">Login:
-                <ion-text color="danger ">*</ion-text>
-            </ion-label>
-            <ion-input required type="text "></ion-input>
-        </ion-item>
+            <ion-item color="dark ">
+                <ion-label position="floating " color="warning">e-mail*
 
-        <ion-item color="dark ">
-            <ion-label position="floating " color="warning">Password*
-                <ion-text color="danger ">*</ion-text>
-            </ion-label>
-            <ion-input type="password"></ion-input>
-        </ion-item>
+                </ion-label>
+                <ion-input required type="e-mail" [(ngModel)]="usuario.email" name="txtemail"></ion-input>
+            </ion-item>
 
-        <ion-button fill="outline" expand="block" color="warning">Acessar</ion-button>
+            <ion-item color="dark ">
+                <ion-label position="floating " color="warning">Password*
+
+                </ion-label>
+                <ion-input type="password" [(ngModel)]="usuario.senha" name="txtsenha"></ion-input>
+            </ion-item>
+
+
+
+            <ion-button type="submit" fill='outline' expand="block" color="warning">Acessar</ion-button>
+
+
+        </form>
+
+
+
     </div>
 
 

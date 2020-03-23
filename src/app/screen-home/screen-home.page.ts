@@ -1,23 +1,26 @@
 import { Component, OnInit } from '@angular/core';
-import { NavController, AlertController } from '@ionic/angular';
 import { AngularFireAuth } from 'angularfire2/auth';
 import { AngularFirestore } from 'angularfire2/firestore';
+import { AlertController, NavController } from '@ionic/angular';
+import { Usuarios } from './../../Models/Usuarios';
 
 @Component({
-  selector: 'app-sreen-inicial',
-  templateUrl: './sreen-inicial.page.html',
-  styleUrls: ['./sreen-inicial.page.scss'],
+  selector: 'app-screen-home',
+  templateUrl: './screen-home.page.html',
+  styleUrls: ['./screen-home.page.scss'],
 })
-export class SreenInicialPage implements OnInit {
-
+export class ScreenHomePage implements OnInit {
+usuario: Usuarios
   constructor( public fbauth:AngularFireAuth, public fbstore:AngularFirestore,public AlertCtrl: AlertController,
-    public navCtrl:NavController) { }
+    public navCtrl:NavController) {
+      this.usuario=new Usuarios()
+     }
 
   ngOnInit() {
     this.fbauth.authState.subscribe(user=>{
       if (user)
       {
-        console.log("autenticado: " + user.uid)
+        console.log("autenticado: " + user.uid + " Nome do usuario: " + user.email)
       }
       else{
         console.log("nao autenticado")
@@ -33,5 +36,5 @@ export class SreenInicialPage implements OnInit {
     this.fbauth.auth.signOut();
     this.navCtrl.navigateForward('sreen-inicial')
   }
-  
+
 }

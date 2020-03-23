@@ -58,11 +58,11 @@ export class AppComponent implements OnInit {
       url:'scree-resgister',
       icon:'person'
     },
-    // {
-    //   title:'Professional Register',
-    //   url:'screen-professional-register',
-    //   icon:'people'
-    // },
+    {
+      title:'Page Home',
+      url:'screen-home',
+      icon:'home'
+    },
     {
       title:'Update Profile',
       url:'screen-update-profile',

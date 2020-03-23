@@ -12,10 +12,11 @@
         <ion-text color="warning">
             WorkIt
         </ion-text>
-        <ion-button fill="outline" color="warning">Entrar na Sua Rede de Negócios </ion-button>
+        <ion-button fill="outline" color="warning" (click)="showScreen('screen-login')">Entrar na Sua Rede de Negócios </ion-button>
         <br>
         <ion-button fill="outline" color="warning" (click)="showScreen('scree-resgister')">Cadastar-se na rede de Negócios </ion-button>
-
+        <br>
+        <ion-button fill="outline" color="warning" (click)="logOut()">LogOut</ion-button>
     </div>
 
 
